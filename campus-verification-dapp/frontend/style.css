@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #1e3a8a, #0f172a);
+    color: white;
+    padding: 20px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 100%;
+    max-width: 850px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.header p {
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+/* CARDS */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Wallet Button */
+#connectWallet {
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    color: white;
+}
+
+#connectWallet:hover {
+    transform: scale(1.03);
+}
+
+/* Verify Button */
+.verify-btn {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+}
+
+.verify-btn:hover {
+    transform: scale(1.03);
+}
+
+/* RESULT BOX */
+.result-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    border-left: 4px solid #22c55e;
+    min-height: 40px;
+}
+
+/* WALLET TEXT */
+#walletAddress {
+    margin-top: 10px;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.6;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.6rem;
+    }
+}

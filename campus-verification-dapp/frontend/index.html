@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate Verification DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>🎓 Certificate Verification DApp</h1>
+        <p>Blockchain-powered academic verification system</p>
+    </div>
+
+    <!-- Wallet Card -->
+    <div class="card">
+        <h2>Wallet Connection</h2>
+        <button id="connectWallet" onclick="connectWallet()">Connect Wallet</button>
+        <p id="walletAddress">Not connected</p>
+    </div>
+
+    <!-- Verify Card -->
+    <div class="card">
+        <h2>Verify Certificate</h2>
+
+        <input id="certId" placeholder="Enter Certificate ID">
+
+        <button class="verify-btn" onclick="verifyCert()">Verify Certificate</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Built with Solidity + Ethers.js 🚀
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
