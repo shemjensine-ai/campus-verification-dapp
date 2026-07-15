@@ -11,10 +11,10 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     background: radial-gradient(circle at top, #1e3a8a, #0f172a);
     color: white;
-    padding: 20px;
+    padding:40px 20px;
 }
 
 /* MAIN CONTAINER */
@@ -83,6 +83,41 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
+}
+/* Register Button */
+
+.register-btn{
+
+background:linear-gradient(135deg,#22c55e,#16a34a);
+
+color:white;
+
+}
+
+
+.register-btn:hover{
+
+transform:scale(1.03);
+
+}
+
+
+
+/* Issue Button */
+
+.issue-btn{
+
+background:linear-gradient(135deg,#8b5cf6,#6366f1);
+
+color:white;
+
+}
+
+
+.issue-btn:hover{
+
+transform:scale(1.03);
+
 }
 
 /* Wallet Button */
